@@ -2,44 +2,74 @@
 <html>
 <head>
     <title>MS Family</title>
+
     <style>
         body {
-            font-family: Arial;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
             text-align: center;
+        }
+
+        h1 {
+            color: white;
+            margin-top: 30px;
+            font-size: 40px;
         }
 
         .container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            width: 60%;
-            margin: auto;
-            margin-top: 50px;
+            gap: 25px;
+            width: 70%;
+            margin: 40px auto;
         }
 
-        .box {
-            padding: 30px;
-            border: 2px solid black;
+        .card {
+            padding: 40px;
+            border-radius: 15px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
             cursor: pointer;
-            font-size: 18px;
-            background-color: linear-gradient(to right,Purple, Black , White);
+            transition: 0.3s;
+            text-decoration: none;
         }
 
-        .box:hover {
-            background-color: Red;
+        .card:hover {
+            transform: scale(1.05);
         }
+
+        /* Different colors for each card */
+        .sajeev { background: linear-gradient(45deg, #667eea, #764ba2); }
+        .satheesh { background: linear-gradient(45deg, #f6d365, #fda085); }
+        .suneesh { background: linear-gradient(45deg, #43e97b, #38f9d7); }
+        .sumesh { background: linear-gradient(45deg, #fa709a, #fee140); }
+
     </style>
 </head>
+
 <body>
 
-    <h1>MS Family</h1>
+    <h1>🌟 MS Family 🌟</h1>
 
     <div class="container">
 
-        <a href="sajeev.html"><div class="box">Sajeev and Family</div></a>
-        <a href="satheesh.html"><div class="box">Satheesh and Family</div></a>
-        <a href="suneesh.html"><div class="box">Suneesh and Family</div></a>
-        <a href="sumesh.html"><div class="box">Sumesh and Family</div></a>
+        <a href="sajeev.html" class="card sajeev">
+            Sajeev and Family
+        </a>
+
+        <a href="satheesh.html" class="card satheesh">
+            Satheesh and Family
+        </a>
+
+        <a href="suneesh.html" class="card suneesh">
+            Suneesh and Family
+        </a>
+
+        <a href="sumesh.html" class="card sumesh">
+            Sumesh and Family
+        </a>
 
     </div>
 
